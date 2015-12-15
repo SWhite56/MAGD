@@ -116,6 +116,7 @@ void draw() {
       text("GAME OVER", 200, 300);
     }
   }
+  //if you press the second box, makes scene = 5, this displays 
   if (scene == 5) {
     background(0);
     fill(255);
@@ -146,7 +147,7 @@ class Box {
     fill(boxes[x][2]);
     rect(boxes[x][0], boxes[x][1], 40, 40);
   }
-
+//parameters for where the cursor has to be
   boolean overBox(int x, int y, int w, int h) {
     if (mouseX >= x && mouseX <= x + w &&
       mouseY >= y && mouseY <= y + h) {
@@ -156,7 +157,7 @@ class Box {
     }
   }
 }
-
+//the first screen after the title
 class FirstRoom {
   PImage cave;
 
@@ -175,7 +176,7 @@ class FirstRoom {
     text("...Do try not to die.", 450, 575);
   }
 }
-
+//the second room if the player picks the green square
 class SecondRoom {
   PImage smaug;
   
@@ -195,7 +196,7 @@ class SecondRoom {
     text("your way out of this.", 1, 470);
   }
 }
-
+//timer that counts down until Game Over
 class Timer {
   int time, passedTime;
 
