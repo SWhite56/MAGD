@@ -2,7 +2,7 @@
   <header>
   <script src="https://raw.githubusercontent.com/processing-js/processing-js/v1.4.8/processing.js"></script>
   </header>
-  <h1>Your FINAL SKETCH Title</h1>
+  <h1>Assingment Ten</h1>
   <script type="text/processing" data-processing-target="mycanvas-final">
   
   <!-- Your FINAL SKETCH goes here -->
@@ -157,7 +157,7 @@ void mousePressed(){
 
   </script>
   <canvas id="mycanvas1"></canvas>
-  <p>Description: Sketch for the Logical Fallacy theme.</p>
+  <p>Description: Sketch for the Logical Fallacy theme. Click to turn the cat "colorless".</p>
         <br />
         <br />
   <h1>Assignment Five</h1>
@@ -238,7 +238,7 @@ void keyPressed(){
 
   </script>
   <canvas id="mycanvas2"></canvas>
-  <p>Description:Sketch for the Sports theme.</p>
+  <p>Description:Sketch for the Sports theme. Click to have the first person serve the ball. Press a key to see the dialogue.</p>
         <br />
         <br />
   <h1>Assignment Six</h1>
@@ -286,6 +286,7 @@ void mousePressed(){
   pressedState = (pressed % 2);
 }
 
+//opening screen
 void titleCard(){
   fill(255);
   textSize(20);
@@ -296,6 +297,7 @@ void titleCard(){
   text("The civilizations of the galaxy call it... MASS EFFECT", 0, 485);
 }
 
+//the stars flying past in the background
 void stars(){
   int centerX = (round(random(0, width)));
   int centerY = (round(random(0, height)));
@@ -303,6 +305,7 @@ void stars(){
   ellipse(centerX, centerY, 5, 5);
 }
 
+//the randomly colored, randomly located planets
 void Planets(){
   if (Planet1X > 0){
     Planet1X = Planet1X - 10;
@@ -341,6 +344,7 @@ void Planets(){
   ellipse(Planet3X, Planet3Y, 80, 80);
 }
 
+//the spaceship
 void Normandy(){
   int offset1 = 5;
   int offset2 = 40;
@@ -358,7 +362,7 @@ void Normandy(){
 
   </script>
   <canvas id="mycanvas3"></canvas>
-  <p>Description:Sketch for the Sci-Fi theme.</p>
+  <p>Description:Sketch for the Sci-Fi theme. Click to pass the title screen. Use the mouse to move the Normandy and dodge the planets.</p>
         <br />
         <br />
   <h1>Assingment Eight</h1>
@@ -395,6 +399,7 @@ Cat myCat;
 Mouse myMouse;
 Timer myTimer;
 
+//black screen that appears after a mouse click
 void gameOverScreen(){
   fill(255);
   textSize(50);
@@ -406,7 +411,7 @@ void mousePressed(){
   pressedState = (pressed % 2);
 }
 
-
+//the mouse
 class Mouse {
   int centerX, centerY;
   PImage mouse;
@@ -446,7 +451,7 @@ class Mouse {
   }
 }
 
-
+//the cat
 class Cat {
   int y;
   PImage cat;
@@ -461,7 +466,7 @@ class Cat {
   }
 }
 
-
+//the timer that summons the text
 class Timer {
   int savedTime;  
   int totalTime;  
@@ -487,7 +492,7 @@ class Timer {
 
   </script>
   <canvas id="mycanvas4"></canvas>
-  <p>Description:Sketch for the Animal theme.</p>
+  <p>Description:Sketch for the Animal theme. Use WASD to move the mouse around the screen and escape the cat. Click to finish.</p>
         <br />
         <br />
   <h1>Assignment Nine</h1>
@@ -497,6 +502,7 @@ class Timer {
 String currentDescriptor;
 int randomDescriptor;
 
+//the string array for the bottom sentence is in here
 void setup(){
   size(800, 600);
   background(255);
@@ -531,7 +537,7 @@ Turkey myTurkey;
 ScaredTurkey myScaredTurkey;
 Timer myTimer;
 
-
+//the cooked turkey
 class Turkey {
   int x, y;
   PImage turkey;
@@ -547,7 +553,7 @@ class Turkey {
   }
 }
 
-
+//the talking turkey
 class ScaredTurkey {
   int x, y;
   PImage scaredturkey;
@@ -564,7 +570,7 @@ class ScaredTurkey {
   }
 }
 
-
+//the timer that summons the response to Tom's question
 class Timer {
   int savedTime;  
   int totalTime;  
@@ -590,6 +596,6 @@ class Timer {
 
   </script>
   <canvas id="mycanvas5"></canvas>
-  <p>Description:Sketch for the Thanksgiving theme.</p>
+  <p>Description:Sketch for the Thanksgiving theme. After a few seconds of waiting the cooked turkey will respond.</p>
   </body>
 </html>  
