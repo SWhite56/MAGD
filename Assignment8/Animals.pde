@@ -51,7 +51,7 @@ class Mouse {
   }
 
   void display() {
-    mouse = loadImage("https://cloud.githubusercontent.com/assets/14317646/11833623/41f03524-a38a-11e5-87fc-87855c87f158.jpg");
+    mouse = loadImage("https://cloud.githubusercontent.com/assets/14317646/11834455/3a3a8020-a392-11e5-9bf6-9f79756c22e2.jpg");
     mouse.resize(0, 100);
     image(mouse, centerX, centerY);
   }
@@ -90,7 +90,7 @@ class Cat {
   }
 
   void display() {
-    cat = loadImage("https://cloud.githubusercontent.com/assets/14317646/11833633/67d6eecc-a38a-11e5-9242-3665c766b4ac.jpg");
+    cat = loadImage("https://cloud.githubusercontent.com/assets/14317646/11834449/2b7c5176-a392-11e5-88f7-83e4b61e1f01.jpg");
     image(cat, 400, y);
   }
 }
