@@ -51,7 +51,7 @@ class Mouse {
   }
 
   void display() {
-    mouse = loadImage("mouse.jpg");
+    mouse = loadImage("https://cloud.githubusercontent.com/assets/14317646/11833623/41f03524-a38a-11e5-87fc-87855c87f158.jpg");
     mouse.resize(0, 100);
     image(mouse, centerX, centerY);
   }
@@ -90,7 +90,7 @@ class Cat {
   }
 
   void display() {
-    cat = loadImage("cat.jpg");
+    cat = loadImage("https://cloud.githubusercontent.com/assets/14317646/11833633/67d6eecc-a38a-11e5-9242-3665c766b4ac.jpg");
     image(cat, 400, y);
   }
 }
