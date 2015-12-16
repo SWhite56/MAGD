@@ -13,7 +13,7 @@ void setup() {
   myFirstRoom = new FirstRoom();
   mySecondRoom = new SecondRoom();
   myTimer = new Timer();
-  treasureChest = loadImage("treasure chest.jpg");
+  treasureChest = loadImage("https://cloud.githubusercontent.com/assets/14317646/11833663/ab8d7438-a38a-11e5-9962-2bde92452221.jpg");
 }
 
 void draw() {
@@ -154,7 +154,7 @@ class FirstRoom {
   PImage cave;
 
   FirstRoom() {
-    cave = loadImage("cave.jpg");
+    cave = loadImage("https://cloud.githubusercontent.com/assets/14317646/11833679/c938bd1c-a38a-11e5-974c-e1cb9fa7f45a.jpg");
   }
 
   void firstRoom() {
@@ -173,7 +173,7 @@ class SecondRoom {
   PImage smaug;
   
   SecondRoom() {
-    smaug = loadImage("smaug.jpg");
+    smaug = loadImage("https://cloud.githubusercontent.com/assets/14317646/11833691/e3b3bf84-a38a-11e5-8964-9285feb157e1.jpg");
   }
 
   void secondRoom() {
