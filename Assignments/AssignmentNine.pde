@@ -47,7 +47,7 @@ class Turkey {
   }
   
   void display() {
-    turkey = loadImage("Turkey.png");
+    turkey = loadImage("https://cloud.githubusercontent.com/assets/14317646/11833640/83750862-a38a-11e5-818a-bf50a8ccf3a8.png");
     image(turkey, x, y);
   }
 }
@@ -63,7 +63,7 @@ class ScaredTurkey {
   }
   
   void display() {
-    scaredturkey = loadImage("scared turkey.jpg");
+    scaredturkey = loadImage("https://cloud.githubusercontent.com/assets/14317646/11833647/9096588e-a38a-11e5-8f81-d4c5b68ba302.jpg");
     scaredturkey.resize(0, 300);
     image(scaredturkey, x, y);
   }
